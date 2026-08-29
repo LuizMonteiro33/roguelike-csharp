@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="Roguelike.Game/Roguelike.Game.csproj" />
+  <Project Path="Roguelike.Tests/Roguelike.Tests.csproj" />
 </Solution>
