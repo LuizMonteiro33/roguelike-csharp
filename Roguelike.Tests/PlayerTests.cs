@@ -35,10 +35,8 @@ public class PlayerTests
     [Theory]
     [InlineData(0)]
     [InlineData(-10)]
-    public void TakeDamage_WhenDamageIsZeroOrNegative_ShouldNotChangeHealth(
-        int damage
-    )
-    {
+public void TakeDamage_WhenDamageIsZeroOrNegative_ShouldNotChangeHealth(int damage)
+    {   
         // Arrange
         Player player = new Player("Luiz", 100, 25);
 

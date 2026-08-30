@@ -8,9 +8,7 @@ foreach (int damage in damages)
 {
     player.TakeDamage(damage);
 
-    Console.WriteLine(
-        $"{player.Name} recebeu {damage} de dano. Vida: {player.Health}"
-    );
+    Console.WriteLine($"{player.Name} recebeu {damage} de dano. Vida: {player.Health}");
 
     if (!player.IsAlive)
     {
