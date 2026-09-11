@@ -30,3 +30,9 @@ Atualmente, a solution e o projeto principal estão configurados e compilando co
 - Processo de build e execução
 - Versionamento com Git
 - Commits pequenos e descritivos
+
+## Resultado
+
+- 4 casos de teste aprovados;
+- build concluído sem erros;
+- simulação encerra quando a vida chega a zero.
