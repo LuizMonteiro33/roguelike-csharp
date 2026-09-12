@@ -11,18 +11,26 @@ Construir um jogo por turnos com geração de mapas, movimentação, combate e c
 - C#
 - .NET 10
 - Git
+- xUnit
 
 ## Tecnologias planejadas
 
 - SadConsole
 - RogueSharp
-- xUnit
 
 ## Estado do projeto
 
-🚧 Em desenvolvimento.
+🚧 Em desenvolvimento, com um protótipo no console e testes automatizados para as regras atuais do jogador.
 
-Atualmente, a solution e o projeto principal estão configurados e compilando com sucesso.
+Os próximos objetivos são implementar geração de mapas, movimentação, combate por turnos e comportamentos de inimigos.
+
+## Funcionalidades implementadas
+
+- **Jogador:** reúne nome, vida e ataque do personagem.
+- **Recebimento de dano:** desconta danos positivos da vida, desconsidera valores zero ou negativos e limita a vida restante a zero.
+- **Estado `IsAlive`:** retorna `true` quando o jogador tem vida e `false` quando ela chega a zero.
+- **Simulação no console:** mostra os efeitos dos danos recebidos e encerra a sequência quando o jogador é derrotado.
+- **Testes unitários com xUnit:** verificam as regras de dano, o limite mínimo de vida e o estado de derrota.
 
 ## Aprendizados
 
@@ -30,9 +38,3 @@ Atualmente, a solution e o projeto principal estão configurados e compilando co
 - Processo de build e execução
 - Versionamento com Git
 - Commits pequenos e descritivos
-
-## Resultado
-
-- 4 casos de teste aprovados;
-- build concluído sem erros;
-- simulação encerra quando a vida chega a zero.
